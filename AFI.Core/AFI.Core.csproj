@@ -1,0 +1,21 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="CSVStore\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="TinyCsvParser" Version="2.7.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="CSVStore\CustomerDataStore.csv">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
+</Project>
